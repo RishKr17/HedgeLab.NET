@@ -10,5 +10,5 @@ jobs:
           dotnet-version: '9.0.304'
       - run: dotnet restore
       - run: dotnet build -c Release --no-restore
-      - run: dotnet test --no-build --collect:"XPlat Code Coverage"
+      - run: dotnet test -c Release --no-build --collect:"XPlat Code Coverage"
 
